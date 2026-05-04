@@ -32,6 +32,21 @@
     text-align: center;
   }
 
+  .hero-capa {
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-capa-img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 12px 32px rgba(44,32,32,0.18));
+  }
+
   /* ─── BARRA DE URGÊNCIA ─── */
   .urgencia-bar {
     position: fixed;
@@ -417,6 +432,200 @@
     margin-bottom: 2px;
   }
 
+  /* ─── O QUE VOCÊ RECEBE ─── */
+  .recebe {
+    background: var(--bege);
+  }
+
+  .recebe-bonus-titulo {
+    font-size: 14px;
+    font-weight: 800;
+    color: #C0566B;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 28px 0 14px;
+    text-align: center;
+  }
+
+  .recebe-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px 18px;
+    box-shadow: 0 2px 16px var(--sombra);
+    border: 1.5px solid #F2E0E4;
+    margin-bottom: 12px;
+  }
+
+  .recebe-card.principal {
+    border-color: #C0566B;
+    background: linear-gradient(135deg, #FFF5F7, white);
+    box-shadow: 0 4px 24px rgba(192, 86, 107, 0.15);
+  }
+
+  .recebe-tag {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #C0566B;
+    background: #FDE8EC;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+
+  .recebe-topo {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 14px;
+  }
+
+  .recebe-ico {
+    font-size: 28px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .recebe-nome {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--texto);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .recebe-dor {
+    font-size: 13px;
+    color: var(--texto-suave);
+    line-height: 1.6;
+  }
+
+  .recebe-preco-linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid #F2E0E4;
+  }
+
+  .recebe-de {
+    font-size: 13px;
+    color: #B0A0A0;
+    text-decoration: line-through;
+  }
+
+  .recebe-gratis {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--verde-escuro);
+    background: #E8F5EE;
+    padding: 3px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+  }
+
+  .recebe-total {
+    background: white;
+    border-radius: 20px;
+    padding: 24px 20px;
+    border: 2px solid #C0566B;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+
+  .recebe-total-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+  }
+
+  .recebe-total-linha.destaque {
+    border-top: 1px dashed #F2E0E4;
+    margin-top: 8px;
+    padding-top: 14px;
+  }
+
+  .recebe-total-label {
+    font-size: 14px;
+    color: var(--texto-suave);
+    font-weight: 500;
+  }
+
+  .recebe-total-de {
+    font-size: 16px;
+    color: #B0A0A0;
+    text-decoration: line-through;
+    font-weight: 600;
+  }
+
+  .recebe-total-por {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    color: #C0566B;
+    line-height: 1;
+  }
+
+  .recebe-economia {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    background: #E8F5EE;
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin-top: 12px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .recebe-bloco-titulo {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .recebe-plano-tag {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 8px 20px;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+  }
+
+  .recebe-plano-tag.essencial {
+    background: #EEF4FF;
+    color: #3A6EC0;
+    border: 2px solid #B8D0F8;
+  }
+
+  .recebe-plano-tag.completo {
+    background: linear-gradient(135deg, #C0566B, #E8A0B0);
+    color: white;
+    border: none;
+  }
+
+  .recebe-plano-sub {
+    font-size: 13px;
+    color: var(--texto-suave);
+    margin-top: 6px;
+  }
+
+  .recebe-bonus-aviso {
+    background: #FFF8E6;
+    border: 1.5px solid #F7C948;
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 13px;
+    color: #7A5C00;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    text-align: left;
+  }
+
   /* ─── PLANOS ─── */
   .planos {
     background: linear-gradient(160deg, white 0%, #FFF5F7 100%);
@@ -701,10 +910,16 @@
         Descubra o método simples que está ajudando mães a organizar o sono dos seus bebês em poucos dias, sem sofrimento e sem culpa.
       </p>
 
-      <div class="preco-hero fade-in">
+      <div class="hero-capa fade-in">
+        <img src="sem_fundo_capa.png" alt="Capa do produto Sono Sem Choro" class="hero-capa-img" />
+      </div>
+
+      <div class="preco-hero fade-in" style="flex-direction:column; align-items:center; gap:6px;">
         <span class="preco-de">De R$97</span>
-        <span class="preco-por">R$27</span>
-        <span class="desconto-tag">72% OFF</span>
+        <div style="display:flex; align-items:center; gap:12px; justify-content:center;">
+          <span class="preco-por" style="font-size:58px;">R$27</span>
+          <span class="desconto-tag">72% OFF</span>
+        </div>
       </div>
       <p class="preco-sub">Acesso imediato • Pagamento único • Sem mensalidade</p>
 
@@ -793,7 +1008,7 @@
       </div>
 
       <br>
-      <a href="#planos" class="cta-btn fade-in">
+      <a href="https://checkout.desenvolveme.com/VCCL1O8SD105" class="cta-btn fade-in">
         👉 QUERO MEU BEBÊ DORMINDO MELHOR
       </a>
     </div>
@@ -859,6 +1074,82 @@
     </div>
   </section>
 
+  <!-- ─── O QUE VOCÊ RECEBE ─── -->
+  <section class="recebe">
+    <div class="container">
+      <div class="section-label fade-in">O que está incluso</div>
+      <h2 class="section-title fade-in">O que você recebe quando compra hoje</h2>
+      <p class="section-sub fade-in">
+        Cada item foi pensado para uma dor real que as mães vivem nas madrugadas. Nada aqui é enfeite.
+      </p>
+
+      <!-- ── BLOCO ESSENCIAL ── -->
+      <div class="recebe-bloco-titulo fade-in">
+        <span class="recebe-plano-tag essencial">Plano Essencial — R$27</span>
+      </div>
+
+      <div class="recebe-card principal fade-in">
+        <div class="recebe-tag">Produto principal</div>
+        <div class="recebe-topo">
+          <span class="recebe-ico">📖</span>
+          <div>
+            <div class="recebe-nome">Sono Sem Choro™ — Guia Completo</div>
+            <div class="recebe-dor">Para a mãe que acorda várias vezes por noite sem entender o motivo e sem ter energia pra pesquisar mais. Um guia direto ao ponto com tudo que você precisa fazer.</div>
+          </div>
+        </div>
+        <div class="recebe-preco-linha">
+          <span class="recebe-de">Valor normal: R$97</span>
+          <span class="recebe-gratis">INCLUSO</span>
+        </div>
+      </div>
+
+      <div class="recebe-card fade-in">
+        <div class="recebe-topo">
+          <span class="recebe-ico">✅</span>
+          <div>
+            <div class="recebe-nome">Checklist de erros que sabotam o sono</div>
+            <div class="recebe-dor">Para a mãe que tenta de tudo e ainda erra sem saber. Uma lista objetiva dos erros mais comuns que impedem o bebê de dormir bem.</div>
+          </div>
+        </div>
+        <div class="recebe-preco-linha">
+          <span class="recebe-de">Valor normal: R$17</span>
+          <span class="recebe-gratis">INCLUSO</span>
+        </div>
+      </div>
+
+      <div class="recebe-card fade-in">
+        <div class="recebe-topo">
+          <span class="recebe-ico">🗓️</span>
+          <div>
+            <div class="recebe-nome">Rotina pronta por idade (0 a 24 meses)</div>
+            <div class="recebe-dor">Para quem não sabe por onde começar. Você abre, vê a idade do seu bebê e já tem a rotina montada, sem precisar criar nada do zero.</div>
+          </div>
+        </div>
+        <div class="recebe-preco-linha">
+          <span class="recebe-de">Valor normal: R$17</span>
+          <span class="recebe-gratis">INCLUSO</span>
+        </div>
+      </div>
+
+      <div class="recebe-total fade-in">
+        <div class="recebe-total-linha">
+          <span class="recebe-total-label">Valor total dos itens:</span>
+          <span class="recebe-total-de">R$131</span>
+        </div>
+        <div class="recebe-total-linha destaque">
+          <span class="recebe-total-label">Você paga hoje:</span>
+          <span class="recebe-total-por">R$27</span>
+        </div>
+        <div class="recebe-economia">Você economiza R$104 nessa oferta</div>
+      </div>
+
+      <a href="https://checkout.desenvolveme.com/VCCL1O8SD105" class="cta-btn pulse fade-in" style="margin-top: 8px;">
+        👉 QUERO MEU BEBÊ DORMINDO MELHOR
+      </a>
+      <div class="cta-note fade-in">🔒 Compra segura &nbsp;|&nbsp; 🛡️ Garantia 7 dias &nbsp;|&nbsp; ⚡ Acesso imediato</div>
+    </div>
+  </section>
+
   <!-- ─── PLANOS ─── -->
   <section class="planos" id="planos">
     <div class="container">
@@ -868,10 +1159,9 @@
 
       <div class="planos-grid">
         <!-- PLANO ESSENCIAL -->
-        <div class="plano-card fade-in">
-          <div class="plano-nome">Essencial</div>
+        <div class="plano-card fade-in" style="text-align:center;">
           <div class="plano-preco-de">De R$97</div>
-          <div class="plano-preco"><span>R$</span>27</div>
+          <div class="plano-preco" style="font-size:58px; color:#C0566B;"><span style="font-size:20px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:700;">R$</span>27</div>
           <p style="font-size:13px; color:var(--texto-suave); margin-bottom:4px;">Pagamento único</p>
           <div class="plano-divider"></div>
           <ul class="plano-itens">
@@ -879,7 +1169,7 @@
             <li><span class="ico-check">✅</span> Checklist de erros que sabotam o sono</li>
             <li><span class="ico-check">✅</span> Rotina pronta por idade (0–24 meses)</li>
           </ul>
-          <a href="#" class="cta-btn" style="font-size:14px; padding:14px 16px; background: linear-gradient(135deg,#5BA0D0,#4088C0); box-shadow:0 6px 24px rgba(64,136,192,0.3);">
+          <a href="https://checkout.desenvolveme.com/VCCL1O8SD103" class="cta-btn" style="font-size:14px; padding:14px 16px; background: linear-gradient(135deg,#5BA0D0,#4088C0); box-shadow:0 6px 24px rgba(64,136,192,0.3);">
             Quero o Essencial →
           </a>
         </div>
@@ -902,7 +1192,7 @@
             <li><span class="ico-check">✅</span> <span class="item-bonus">🚨 Guia de Emergência da Madrugada</span></li>
             <li><span class="ico-check">✅</span> <span class="item-bonus">📋 Plano de Ajustes Semanais</span></li>
           </ul>
-          <a href="#" class="cta-btn pulse" style="font-size:15px; padding:16px;">
+          <a href="https://checkout.desenvolveme.com/VCCL1O8SD105" class="cta-btn pulse" style="font-size:15px; padding:16px;">
             👉 QUERO O COMPLETO
           </a>
           <p style="font-size:12px; color:var(--verde-escuro); margin-top:8px; font-weight:600;">
@@ -997,7 +1287,7 @@
         <div style="font-size:13px; color:var(--texto-suave);">Pagamento único • Acesso imediato • Sem mensalidade</div>
       </div>
 
-      <a href="#planos" class="cta-btn pulse fade-in" style="font-size:18px; padding:20px 24px;">
+      <a href="https://checkout.desenvolveme.com/VCCL1O8SD105" class="cta-btn pulse fade-in" style="font-size:18px; padding:20px 24px;">
         👉 QUERO MEU BEBÊ DORMINDO MELHOR
       </a>
       <div class="cta-note fade-in" style="margin-top:14px;">
